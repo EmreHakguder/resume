@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.htmlPage {
+    justify-content: center;
+}
+
+.printBorders {
+    margin: 0%;
+}
+.resumeBody {
+    font-family: 'Cormorant Garamond', serif;
+    width: 8.5in;
+    height: 11in; 
+    border: solid .1em gray;
+    outline: solid .1em gainsboro;
+    outline-offset: -5px;
+    /* box-shadow: gainsboro 1px 1px 1px 2px; */
+    
+}
+
+.safeSpace {
+    margin: .6in .7in;
+    /* border: solid 1px gainsboro; */
+}
+
+.safeSpace h1 {
+    margin: 0em 0em;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 2.25em;
+    font-weight: 400;
+    /* background-color: brown; */
+}
+
+.contactContainer {
+    margin: -1em;
+    display: flex;
+    justify-content: center;
+    /* background-color: bisque; */
+}
+
+.contactItem {
+    padding: .1em .5em;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+  }
+
+a {
+    color: rgb(20,40,80);
+}
+
+a.visited {
+    color:inherit;
+}
+
+.hyperLink {
+    /* font-style: italic; */
+}
+
+.contentsContainer {
+    /* border: solid 1px gainsboro; */
+    margin: 0em;
+}
+
+.contentSection{
+    margin: .5em 0em .5em 0em;
+    justify-content: center;
+}
+
+.contentTitle{
+    text-align: center;
+    margin: 1em 0em .75em 0em;
+    font-variant: small-caps;
+    font-size: 1.25em;
+    letter-spacing: .05em;
+}
+
+.contentTitle:after {
+    position: relative;
+    content: "" ;
+    display: block;
+    margin: -.5em auto;
+    width: 40%;
+    padding-top:.5em;
+    border-bottom: solid 1px gainsboro;
+}
+
+.contentEntry{
+    margin: .25em 0em .5em 0em;
+}
+
+.instituteDateContainer{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(245, 245, 245);
+    /* background-color:red; */
+    border-radius: 5px;
+}
+
+.schoolDateContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.instituteName{
+    margin: .2em 0em;
+    text-align: left;
+    flex-grow: .7;
+    flex-basis: 0;
+}
+
+.positionTitle {
+    margin: .2em .5em .2em 0em;
+    font-style: italic;
+    text-align: right;
+    /* border: solid 1px gainsboro; */
+    flex-grow: .8;
+    flex-basis: 0;
+}
+
+.instituteDate{
+    margin: .2em 0em .2em .5em;
+    text-align: left;
+    flex-grow: .65;
+    flex-basis: 0;
+}
+
+.instituteLocation{
+    margin: .2em 0em;
+    text-align: right;
+    flex-grow: .5;
+    flex-basis: 0;
+}
+
+
+ul.instituteBullets{
+    margin: .2em 0em;
+    /* border: solid 1px gainsboro; */
+}
+
+.listItem {
+    margin: 0em 0em 0em -1em;
+    /* border: solid 1px gainsboro; */
+}
+
+.skillsBox {
+    /* background-color: red; */
+    align-items: center;
+    padding: 0em .6em;
+}
+
+.data{
+    flex-grow: .5;
+    flex-basis: 0;
+}
+.languages{
+    flex-grow: .5;
+    flex-basis: 0;
+}
+.visual{
+    flex-grow: .5;
+    flex-basis: 0;
+}
+
+.skill-levelBox {
+    display: grid;
+    grid-template-columns: 80% 1fr;
+    width: auto;
+    justify-content: space-evenly;
+}
+
+.skill-levelBox p {
+    margin: 0em;
+    text-align: left;
+    /* background-color: red; */
+}
+.skill-levelBox i {
+    margin: 0em;
+    text-align: right;
+    /* background-color: red; */
+}
+
+.skillsSection {
+    display: flex;
+    margin-top: -.75em;
+    /* background-color: gold; */
+    justify-content: space-between;
+    
+}
+
+@media print {
+     .skillsSection .contentSection {page-break-inside: avoid;}
+  }
+
+
+
+.education {
+    background-color: none;
+    margin-top: -.5em;
+}
+.education h4 {
+    margin-top: -.1em;
+    margin-bottom: -.1em;
+}
+.education p {
+    margin-top: -.1em;
+    margin-bottom: -.1em;
+}
